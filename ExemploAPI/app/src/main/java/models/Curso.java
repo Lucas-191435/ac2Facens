@@ -56,9 +56,9 @@ public class Curso {
     public static String parseJson(Curso usuario){
         JSONObject jsonObject = new JSONObject();
         try {
-            jsonObject.put("Nome",usuario.getNome());
-            jsonObject.put("Duracao",usuario.getEmail());
-            jsonObject.put("Valor",usuario.getSenha());
+            jsonObject.put("nome",usuario.getNome());
+            jsonObject.put("duracao",usuario.getEmail());
+            jsonObject.put("valor",usuario.getSenha());
             return  jsonObject.toString();
         }
         catch (Exception ex){
@@ -70,9 +70,9 @@ public class Curso {
         try {
             Curso usuario = new Curso();
             JSONObject obj = new JSONObject(json);
-            usuario.setNome(obj.getString("Nome"));
-            usuario.setEmail(obj.getString("Duracao"));
-            usuario.setSenha(obj.getString("Valor"));
+            usuario.setNome(obj.getString("nome"));
+            usuario.setEmail(obj.getString("duracao"));
+            usuario.setSenha(obj.getString("valor"));
             usuario.setId(obj.getInt("id"));
 
             return usuario;
@@ -89,9 +89,9 @@ public class Curso {
             for (int i = 0; i < array.length(); i++) {
                 Curso usuario = new Curso();
                 JSONObject obj = array.getJSONObject(i);
-                usuario.setNome(obj.getString("Nome"));
-                usuario.setEmail(obj.getString("Duracao"));
-                usuario.setSenha(obj.getString("Valor"));
+                usuario.setNome(obj.getString("nome"));
+                usuario.setEmail(obj.getString("duracao"));
+                usuario.setSenha(obj.getString("valor"));
                 usuario.setId(obj.getInt("id"));
                 usuarios.add(usuario);
             }

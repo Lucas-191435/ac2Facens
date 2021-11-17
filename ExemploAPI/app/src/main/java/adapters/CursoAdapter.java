@@ -34,6 +34,7 @@ public class CursoAdapter extends RecyclerView.Adapter<CursoHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull CursoHolder holder, int position) {
+
         holder.txtNome.setText(usuarios.get(position).getNome());
         holder.txtEmail.setText(usuarios.get(position).getEmail());
 

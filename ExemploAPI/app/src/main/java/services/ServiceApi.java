@@ -13,8 +13,13 @@ import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
 //"https://61560fe1e039a0001725a8ed.mockapi.io/api/v1/" - API antiga
+//Igão
+//https://61942e2d0b39a70017b15763.mockapi.io/api/v1/
+
+//MEU
+//https://618af95c34b4f400177c4974.mockapi.io/api/v1/
 public class ServiceApi {
-    private final static String url = "https://618af95c34b4f400177c4974.mockapi.io/api/v1/";
+    private final static String url = "https://61942e2d0b39a70017b15763.mockapi.io/api/v1/";
 
     public static String getService(String dataset, String method, String data){
         String reqUrl = url + dataset;
